@@ -112,7 +112,7 @@ const SideMenu = ({ closeMenu }) => {
             <FaGithub color="#8d8d8d" size={20} />
           </a>
           <a
-            href="https://www.linkedin.com/in/bilal-ali-250582203/"
+            href="https://www.linkedin.com/in/bilalalirizvi/"
             target="_blank"
             rel="noreferrer"
           >
