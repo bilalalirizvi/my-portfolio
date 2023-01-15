@@ -139,12 +139,34 @@ const Index = () => {
                         spacing={5}
                         className="linkIconSmall"
                       >
-                        <span style={styles.icon}>
-                          <BiGitRepoForked />
-                        </span>
-                        <span style={styles.icon}>
-                          <BiLink />
-                        </span>
+                        <a
+                          href={githubRepoUrl}
+                          target={"_blank"}
+                          rel="noreferrer"
+                          style={{
+                            textDecoration: "none",
+                            cursor: "pointer",
+                            color: "black",
+                          }}
+                        >
+                          <span style={styles.icon}>
+                            <BiGitRepoForked />
+                          </span>
+                        </a>
+                        <a
+                          href={hostedUrl}
+                          target={"_blank"}
+                          rel="noreferrer"
+                          style={{
+                            textDecoration: "none",
+                            cursor: "pointer",
+                            color: "black",
+                          }}
+                        >
+                          <span style={styles.icon}>
+                            <BiLink />
+                          </span>
+                        </a>
                       </Stack>
 
                       <Stack spacing={10} className="linkIcon">
@@ -169,8 +191,8 @@ const Index = () => {
                             <a
                               href={githubRepoUrl}
                               target={"_blank"}
-                              style={{ color: "white", fontSize: 13 }}
                               rel="noreferrer"
+                              style={{ color: "white", fontSize: 13 }}
                             >
                               {githubRepoUrl}
                             </a>
